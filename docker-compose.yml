@@ -1,0 +1,7 @@
+services:
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "1025:1025"   # mail slot (your scripts send here)
+      - "8025:8025"   # web page (view emails in browser)
+    restart: unless-stopped
